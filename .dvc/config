@@ -1,0 +1,6 @@
+[core]
+    remote = s3modelremote
+['remote "s3remote"']
+    url = s3://mlops-mehtaparth93-model-store-bucket
+['remote "s3modelremote"']
+    url = s3://mlops-mehtaparth93-model-store-bucket/models
