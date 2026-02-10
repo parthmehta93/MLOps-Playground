@@ -4,7 +4,14 @@ metadata:
   name: churn-predictor
   namespace: churn-model
 spec:
-  predictor:
+  predictor
     serviceAccountName: sa-s3-access
     sklearn:
-      storageUri: s3://churn-model-bucket-cicd-abhi/models/churn_model.pkl
+      storageUri: s3://mlops-mehtaparth93-model-store-bucket/models/churn_model.pkl
+      resources:
+        requests:
+          cpu: "500m"
+          memory: "512Mi"
+        limits:
+          cpu: "1"
+          memory: "1Gi"
