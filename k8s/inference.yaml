@@ -7,7 +7,7 @@ spec:
   predictor
     serviceAccountName: sa-s3-access
     sklearn:
-      storageUri: s3://mlops-mehtaparth93-model-store-bucket/models/churn_model.pkl
+      storageUri: s3://mlops-mehtaparth93-churn-model-bucket-cicd/models/churn_model.pkl
       resources:
         requests:
           cpu: "500m"
